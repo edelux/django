@@ -17,6 +17,6 @@ environments:
       cluster: dev-ecs_cluster
       cpu: 128
       memory: 64
-      replicas: 2
+      replicas: 4
       domain_name: django.dev.edeluquez.com
 ...
