@@ -53,14 +53,15 @@ This project follows the [OCI image label spec](https://github.com/opencontainer
 
 ---
 
-## 🔐 Why Debian?
+## 🔐 Why Alpine Linux?
 
-- **🔒 Security**: Actively maintained with a strong security team.
-- **🧩 Modularity**: Flexible base that suits many purposes.
-- **🌍 Ecosystem**: Used by major distributions like Ubuntu, Kali, and Raspbian.
-- **💡 Simplicity**: Easy to script and customize.
+- **📦 Tiny Size**: The base image is under 6MB.
+- **⚡ Fast Boot Time**: Ideal for short-lived containers and serverless.
+- **🔐 Simplicity Equals Security**: Fewer packages mean fewer vulnerabilities.
+- **🔁 Common in Production**: Used by many official images (Node.js, Python, Go).
+- **🧭 Great for Embedded**: Used in routers, gateways, and low-memory devices.
 
-Although this image uses Debian, these techniques are applicable to any Linux distribution.
+Alpine is the distribution of choice when you need a functional, minimal, POSIX-compliant system that excels in modern containerized workflows.
 
 ---
 
