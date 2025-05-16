@@ -1,0 +1,22 @@
+---
+environments:
+  dev:
+    docker:
+      APP: django
+      VERSION: "0.1"
+      registry: ecr
+      url: 199920436475.dkr.ecr.us-east-1.amazonaws.com
+      platforms: linux/amd64,linux/arm64,linux/ppc64le,windows-amd64
+      filename: Dockerfile
+      filepath: docker
+      arguments:
+        APP: "{{ APP }}"
+        VERSION: "{{ VERSION }}"
+
+    microservice:
+      cluster: dev-ecs_cluster
+      cpu: 128
+      memory: 64
+      replicas: 2
+      domain_name: django.dev.edeluquez.com
+...
